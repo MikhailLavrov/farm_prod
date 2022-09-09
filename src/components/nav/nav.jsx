@@ -1,10 +1,11 @@
 import React from "react";
+import "./style.css";
 
-import Button from "../../ui/button/Button";
+import Button from "../button/button";
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className="navigation">
       <Button />
     </nav>
   );

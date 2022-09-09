@@ -1,0 +1,10 @@
+.footer {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 18px 90px;
+}
+
+.footer__text {
+  margin-left: auto;
+}

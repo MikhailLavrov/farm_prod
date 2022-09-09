@@ -1,0 +1,33 @@
+.about {
+  background-color: #D8ECFE;
+  padding: 183px 90px;
+  position: relative;
+  background-image: url('data:image/svg+xml,%3Csvg width="446" height="447" viewBox="0 0 446 447" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cellipse cx="223" cy="223.5" rx="223" ry="223.5" fill="%23C4E2FF"/%3E%3C/svg%3E%0A');
+  background-repeat: no-repeat;
+  background-position: 93%;
+}
+
+.about::after {
+  position: absolute;
+  content: '';
+  width: 446px;
+  height: 446px;
+}
+
+.about__wrapper {
+  width: 538px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about__title {
+  margin: 0;
+  font-size: 44px;
+  line-height: 51px;
+  font-weight: 700;
+}
+
+.about__text {
+  margin: 0;
+}

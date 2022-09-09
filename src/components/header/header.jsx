@@ -1,7 +1,8 @@
 import React from "react";
+import "./style.css";
 
 import Logo from "../logo/logo";
-import Nav from "../layout/nav/nav";
+import Nav from "../nav/nav";
 
 export default function Header() {
   return (

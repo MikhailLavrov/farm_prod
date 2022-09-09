@@ -5,12 +5,12 @@ import Button from "../button/button";
 
 export default function BenefitsList() {
   return (
-    <>
+    <section>
       <h1>Почему фермерские продукты лучше?</h1>
       <ul>
         <BenefitCard />
       </ul>
       <Button />
-    </>
+    </section>
   );
 }
