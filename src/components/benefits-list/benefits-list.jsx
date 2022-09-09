@@ -1,10 +1,9 @@
 import React from "react";
-import "./style.css";
 
-import BenefitCard from "../../ui/benefit-card/BenefitCard";
-import Button from "../../ui/button/Button";
+import BenefitCard from "../benefit-card/benefitCard";
+import Button from "../button/button";
 
-export default function Benefits() {
+export default function BenefitsList() {
   return (
     <>
       <h1>Почему фермерские продукты лучше?</h1>
