@@ -1,13 +1,14 @@
 import React from "react";
+import './style.css';
 
-import BenefitCard from "../benefit-card/benefitCard";
+import BenefitCard from '../benefit-card/benefit-card';
 import Button from "../button/button";
 
 export default function BenefitsList() {
   return (
-    <section>
-      <h1>Почему фермерские продукты лучше?</h1>
-      <ul>
+    <section className="benefits">
+      <h2 className="benefits__title">Почему фермерские продукты лучше?</h2>
+      <ul className="benefits__list">
         <BenefitCard />
       </ul>
       <Button />

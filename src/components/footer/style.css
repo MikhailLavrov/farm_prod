@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   padding: 18px 90px;
+  box-sizing: border-box;
 }
 
 .footer__text {
