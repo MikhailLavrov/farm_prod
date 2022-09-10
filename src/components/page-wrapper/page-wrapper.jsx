@@ -7,12 +7,12 @@ import Footer from "../footer/footer";
 
 export default function PageWrapper() {
   return (
-    <>
+    <div className="page-wrapper">
       <Header />
       <main className="page-wrapper__main">
         <MainPage />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
