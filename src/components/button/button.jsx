@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
 
-export default function Button() {
+export default function Button({ children, minWidth }) {
   return (
-    <button className="button">Купить</button>
+    <button type="button" style={{ minWidth: minWidth }} className="button">{children}</button>
   );
 }

@@ -3,18 +3,20 @@ import './style.css';
 
 import BenefitCard from '../benefit-card/benefit-card';
 import Button from "../button/button";
+import Title2 from "../title2/title2";
 
-export default function BenefitsList() {
+export default function BenefitsList({benefits}) {
   return (
     <section className="benefits">
-      <h2 className="benefits__title">Почему фермерские продукты лучше?</h2>
+      <Title2>Почему фермерские продукты лучше?</Title2>
       <ul className="benefits__list">
-        <BenefitCard />
-        <BenefitCard />
-        <BenefitCard />
-        <BenefitCard />
+        {benefits.map((benefit) => (
+          <li className="benefits__item">
+            <BenefitCard benefit={benefit}/>
+          </li>
+        ))}
       </ul>
-      <Button />
+      <Button minWidth={260}>Купить</Button>
     </section>
   );
 }

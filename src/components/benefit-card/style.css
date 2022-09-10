@@ -21,13 +21,6 @@
   padding: 2px 10px;
 }
 
-.benefit-card__title {
-  margin: 0;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
-}
-
 .benefit-card__text {
   margin: 0;
   grid-column: 1/3;

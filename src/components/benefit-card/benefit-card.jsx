@@ -1,17 +1,18 @@
 import React from "react";
 import './style.css';
 
-import moreTasty from '../../assets/more_tasty.svg';
+import Title3 from '../title3/title3';
+import Category from "../category/category";
 
-export default function BenefitCard() {
+export default function BenefitCard({category, color, title, text, image}) {
   return (
-    <article className="benefit-card">
-      <img src={moreTasty} width={52} height={52} alt="" />
+    <article className="benefit-card" style={{backgroundColor: color}}>
+      <img src={image} width={52} height={52} alt="benefit" />
       <div className="benefit-card__header">
-        <span className="benefit-card__category">Фермерские продукты</span>
-        <h3 className="benefit-card__title">Еда намного вкуснее</h3>
+        <Category bgColor={'#88AA4D'}>{category}</Category>
+        <Title3>{title}</Title3>
       </div>
-      <p className="benefit-card__text">Домашняя колбаса из мяса, соли и специй и колбаса из магазина — два настолько разных продукта, что они даже не родственники</p>
+      <p className="benefit-card__text" dangerouslySetInnerHTML={{__html: text}} />
     </article>
   );
 }

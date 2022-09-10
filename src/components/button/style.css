@@ -1,5 +1,5 @@
 .button {
-  padding: 16.5px 97.5px;
+  padding: 16.5px;
   border: none;
   color: #ffffff;
   font-weight: 700;
@@ -8,4 +8,9 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fa8a00;
 }

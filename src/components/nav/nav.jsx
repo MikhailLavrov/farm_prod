@@ -6,7 +6,7 @@ import Button from "../button/button";
 export default function Nav() {
   return (
     <nav className="navigation">
-      <Button />
+      <Button minWidth={260}>Купить</Button>
     </nav>
   );
 }

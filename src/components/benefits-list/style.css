@@ -5,18 +5,14 @@
   align-items: center;
 }
 
-.benefits__title {
-  margin: 0;
-  font-size: 36px;
-  line-height: 41px;
-  margin-bottom: 64px;
-}
-
 .benefits__list {
-  margin: 0;
-  margin-bottom: 64px;
+  margin: 64px 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+.benefits__item {
+  list-style: none;
 }
