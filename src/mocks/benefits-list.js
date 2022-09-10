@@ -1,7 +1,7 @@
 const benefitsList = [
   {
     id: 0,
-    category: 'Фермерские продукты',
+    category: 'farm',
     color: '#E1EDCE',
     image: '../assets/more_tasty.svg',
     title: 'Еда намного вкуснее',
@@ -10,7 +10,7 @@ const benefitsList = [
   
   {
     id: 2,
-    category: 'Магазинные продукты',
+    category: 'market',
     color: '#F8DDD7',
     image: '../assets/old_prod.svg',
     title: 'Просроченные продукты',
@@ -19,7 +19,7 @@ const benefitsList = [
   
   {
     id: 1,
-    category: 'Фермерские продукты',
+    category: 'farm',
     color: '#E1EDCE',
     image: '../assets/natural_prod.svg',
     title: 'Натуральные продукты',
@@ -28,7 +28,7 @@ const benefitsList = [
   
   {
     id: 3,
-    category: 'Магазинные продукты',
+    category: 'market',
     color: '#F8DDD7',
     image: '../assets/bad_quality.svg',
     title: 'Некачественное мясо',

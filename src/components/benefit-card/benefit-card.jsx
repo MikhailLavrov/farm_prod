@@ -9,7 +9,7 @@ export default function BenefitCard({category, color, title, text, image}) {
     <article className="benefit-card" style={{backgroundColor: color}}>
       <img src={image} width={52} height={52} alt="benefit" />
       <div className="benefit-card__header">
-        <Category bgColor={'#88AA4D'}>{category}</Category>
+        <Category category={category} />
         <Title3>{title}</Title3>
       </div>
       <p className="benefit-card__text" dangerouslySetInnerHTML={{__html: text}} />
