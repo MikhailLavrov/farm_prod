@@ -1,14 +1,15 @@
 .button {
   padding: 16.5px;
-  border: none;
-  color: #ffffff;
-  font-weight: 700;
-  background-color: #FC9B27;
+  
   font-family: 'Inter', sans-serif;
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
+  color: #ffffff;
+  
   cursor: pointer;
+  border: none;
+  background-color: #FC9B27;
 }
 
 .button:hover {

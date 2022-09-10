@@ -12,7 +12,7 @@ export default function BenefitsList({benefits}) {
       <ul className="benefits__list">
         {benefits.map((benefit) => (
           <li className="benefits__item">
-            <BenefitCard benefit={benefit}/>
+            <BenefitCard {...benefit}/>
           </li>
         ))}
       </ul>

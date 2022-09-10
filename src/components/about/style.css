@@ -1,7 +1,8 @@
 .about {
   position: relative;
-  padding: 183px 90px;
   min-height: 600px;
+  padding: 183px 90px;
+
   box-sizing: border-box;
   background:
   url('../../assets/about.svg') bottom right 18% no-repeat,
@@ -10,10 +11,11 @@
 
 .about::before {
   position: absolute;
-  content: '';
-  background-color: #D8ECFE;
   width: 100vw;
   height: 100%;
+  
+  content: '';
+  background-color: #D8ECFE;
   top: 0;
   left: 50%;
   transform: translateX(-50%);

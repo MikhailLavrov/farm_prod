@@ -12,6 +12,7 @@ html {
 body {
   position: relative;
   min-height: 100%;
+  
   font-family: 'Inter', sans-serif;
   font-size: 18px;
   line-height: 27px;

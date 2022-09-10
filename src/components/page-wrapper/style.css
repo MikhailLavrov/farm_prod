@@ -4,7 +4,8 @@
 }
 
 .page-wrapper__main {
+  margin: 0 auto;
+  
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }

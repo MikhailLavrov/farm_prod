@@ -1,8 +1,9 @@
 .footer {
   min-height: 80px;
+  padding: 18px 90px;
+
   display: flex;
   align-items: center;
-  padding: 18px 90px;
   box-sizing: border-box;
 }
 

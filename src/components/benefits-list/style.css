@@ -1,5 +1,6 @@
 .benefits {
   padding: 100px 90px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +9,7 @@
 .benefits__list {
   margin: 64px 0;
   padding: 0;
+  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;

@@ -1,9 +1,13 @@
 .benefit-card {
-  background-color: #E1EDCE;
+  min-height: 197px;
   padding: 20px;
+
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 20px;
+
+  background-color: #E1EDCE;
+  box-sizing: border-box;
 }
 
 .benefit-card__header {
@@ -14,11 +18,13 @@
 }
 
 .benefit-card__category {
+  padding: 2px 10px;
+
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
+  
   background-color: #88AA4D;
-  padding: 2px 10px;
 }
 
 .benefit-card__text {
