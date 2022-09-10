@@ -1,10 +1,12 @@
 import React from "react";
 import './style.css';
 
+import moreTasty from '../../assets/more_tasty.svg';
+
 export default function BenefitCard() {
   return (
     <article className="benefit-card">
-      <img src="" width={52} height={52} alt="" />
+      <img src={moreTasty} width={52} height={52} alt="" />
       <div className="benefit-card__header">
         <span className="benefit-card__category">Фермерские продукты</span>
         <h3 className="benefit-card__title">Еда намного вкуснее</h3>

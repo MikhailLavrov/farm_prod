@@ -10,6 +10,9 @@ export default function BenefitsList() {
       <h2 className="benefits__title">Почему фермерские продукты лучше?</h2>
       <ul className="benefits__list">
         <BenefitCard />
+        <BenefitCard />
+        <BenefitCard />
+        <BenefitCard />
       </ul>
       <Button />
     </section>
