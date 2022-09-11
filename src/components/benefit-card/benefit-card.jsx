@@ -1,18 +1,28 @@
 import React from "react";
 import './style.css';
-
 import Title3 from '../title3/title3';
 import Category from "../category/category";
 
-export default function BenefitCard({color, image, category, title, text}) {
+const farmCardColor = '#E1EDCE';
+const marketCardColor = '#F8DDD7';
 
+export default function BenefitCard({image, category, title, text}) {
+  let bgCard;
+
+  if (category === 'farm') {
+    bgCard = farmCardColor;
+  }
+  if (category === 'market') {
+    bgCard = marketCardColor;
+  }
+  
   return (
     <article 
       className="benefit-card" 
-      style={{backgroundColor: color}}
+      style={{backgroundColor: bgCard}}
     >
       <img 
-        // src={require(image)} 
+        src={image.default}
         width={52} 
         height={52} 
         alt="benefit" 

@@ -1,6 +1,5 @@
 import React from "react";
 import './style.css';
-
 import Title1 from '../title1/title1';
 
 export default function About() {

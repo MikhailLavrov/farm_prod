@@ -1,6 +1,5 @@
 import React from "react";
 import './style.css';
-
 import BenefitCard from '../benefit-card/benefit-card';
 import Button from "../button/button";
 import Title2 from "../title2/title2";
