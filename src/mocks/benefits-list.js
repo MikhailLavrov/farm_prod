@@ -21,7 +21,7 @@ const benefitsList = [
     id: 1,
     category: 'farm',
     color: '#E1EDCE',
-    image: '../assets/natural_prod.svg',
+    image: '../../assets/natural_prod.svg',
     title: 'Натуральные продукты',
     text: 'Поставляем местные органические продукты выращенные без пестицидов и химических удобрений.',
   },
