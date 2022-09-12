@@ -1,12 +1,28 @@
 import React from "react";
-import "./style.css";
 import logo from '../../assets/logo.svg';
+import styled from "styled-components";
+
+const LogoLink = styled.a `
+  display: flex;
+  align-items: center;
+  
+  text-decoration: none;
+`;
+
+const LogoText = styled.span `
+  margin-left: 44px;
+
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #333333;
+`;
 
 export default function Logo() {
   return (
-    <a className="logo__link" href="index.html">
+    <LogoLink href="index.html">
       <img src={logo} alt="logo" />
-      <span className="logo__text">Фермерские продукты</span>
-    </a>
+      <LogoText>Фермерские продукты</LogoText>
+    </LogoLink>
   );
 }

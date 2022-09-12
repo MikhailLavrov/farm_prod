@@ -1,12 +1,25 @@
 import React from "react";
-import './style.css';
 import Logo from "../logo/logo";
+import styled from "styled-components";
+
+const StyledFooter = styled.footer `
+  min-height: 80px;
+  padding: 18px 90px;
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+`;
+
+const FooterText = styled.span `
+  margin-left: auto;
+`;
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <StyledFooter>
       <Logo />
-      <span className="footer__text">Создано 2021</span>
-    </footer>
+      <FooterText>Создано 2021</FooterText>
+    </StyledFooter>
   );
 }

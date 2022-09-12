@@ -1,30 +1,26 @@
 import React from "react";
-import './style.css';
 import BenefitCard from '../benefit-card/benefit-card';
 import Button from "../button/button";
 import Title2 from "../title2/title2";
+import { StyledBenefits, StyledBenefitsList } from "./styled";
+import { Li as BenefitsItem } from '../../elements/index';
 
 export default function BenefitsList({benefits}) {
   return (
-    <section 
-      className="benefits"
-    >
+    <StyledBenefits>
       <Title2>Почему фермерские продукты лучше?</Title2>
-      <ul
-        className="benefits__list"
-      >
+      <StyledBenefitsList>
         {benefits.map((benefit) => (
-          <li 
+          <BenefitsItem 
             key={benefit.id} 
-            className="benefits__item"
           >
             <BenefitCard {...benefit}/>
-          </li>
+          </BenefitsItem>
         ))}
-      </ul>
+      </StyledBenefitsList>
       <Button 
         minWidth={260}
       >Купить</Button>
-    </section>
+    </StyledBenefits>
   );
 }

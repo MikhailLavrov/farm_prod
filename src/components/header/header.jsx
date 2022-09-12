@@ -1,13 +1,20 @@
 import React from "react";
-import "./style.css";
 import Logo from "../logo/logo";
 import Nav from "../nav/nav";
+import styled from "styled-components";
+
+const StyledHeader = styled.header `
+  padding: 10px 90px;
+  
+  display: flex;
+  align-items: center;
+`;
 
 export default function Header() {
   return (
-    <header className="header">
+    <StyledHeader>
       <Logo />
       <Nav />
-    </header>
+    </StyledHeader>
   );
 }

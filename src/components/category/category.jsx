@@ -1,5 +1,13 @@
 import React from "react";
-import "./style.css";
+import styled from "styled-components";
+
+const CategoryName = styled.span `
+  padding: 2px 10px;
+  
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+`;
 
 export const CategoryType = {
   FARM: 'farm',
@@ -31,11 +39,10 @@ export default function Category({ category }) {
   }
 
   return options.text ? (
-    <span 
-      className="category" 
+    <CategoryName 
       style={{backgroundColor: options.bgColor}}
     >
       {options.text}
-    </span>
+    </CategoryName>
   ) : null;
 }

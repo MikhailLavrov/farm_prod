@@ -12,8 +12,5 @@ npm start
 
 - react components
 - css-in-js
-- js
-- bem
-- semantic / adaptive / responsive layout
 
 !(shortcut.jpg)
