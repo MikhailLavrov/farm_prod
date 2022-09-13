@@ -11,16 +11,12 @@ export default function BenefitsList({benefits}) {
       <Title2>Почему фермерские продукты лучше?</Title2>
       <StyledBenefitsList>
         {benefits.map((benefit) => (
-          <BenefitsItem 
-            key={benefit.id} 
-          >
+          <BenefitsItem key={benefit.id}>
             <BenefitCard {...benefit}/>
           </BenefitsItem>
         ))}
       </StyledBenefitsList>
-      <Button 
-        minWidth={260}
-      >Купить</Button>
+      <Button minWidth={260}>Купить</Button>
     </StyledBenefits>
   );
 }

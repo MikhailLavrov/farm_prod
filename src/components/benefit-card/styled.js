@@ -1,4 +1,6 @@
-.benefit-card {
+import styled from "styled-components";
+
+export const StyledBenefitCard = styled.article `
   min-height: 197px;
   padding: 20px;
 
@@ -8,26 +10,11 @@
 
   background-color: #E1EDCE;
   box-sizing: border-box;
-}
+`;
 
-.benefit-card__header {
+export const CardHeader = styled.div `
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
-}
-
-.benefit-card__category {
-  padding: 2px 10px;
-
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  
-  background-color: #88AA4D;
-}
-
-.benefit-card__text {
-  margin: 0;
-  grid-column: 1/3;
-}
+`;

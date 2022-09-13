@@ -10,7 +10,7 @@ npm start
 
 ## stack
 
-- react components
-- css-in-js
+- react
+- styled components
 
-!(shortcut.jpg)
+![Иллюстрация к проекту](https://github.com/MikhailLavrov/farm_prod/raw/master/shortcut.jpg)

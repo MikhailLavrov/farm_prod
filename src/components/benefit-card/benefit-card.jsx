@@ -1,47 +1,45 @@
 import React from "react";
-import './style.css';
+import styled from "styled-components";
 import Title3 from '../title3/title3';
 import Category from "../category/category";
+import { StyledBenefitCard, CardHeader } from "./styled";
+import { P } from '../../elements/index';
 
+const CardText = styled(P) `
+  grid-column: 1/3;
+`;
 const farmCardColor = '#E1EDCE';
 const marketCardColor = '#F8DDD7';
+const defaultCardColor = '#0000001c';
 
 export default function BenefitCard({image, category, title, text}) {
   let bgCard;
 
-  if (category === 'farm') {
-    bgCard = farmCardColor;
-  }
-  if (category === 'market') {
-    bgCard = marketCardColor;
+  switch (category) {
+    case 'farm':
+      bgCard = farmCardColor;
+      break;
+    case 'market':
+      bgCard = marketCardColor;
+      break;
+    default:
+      bgCard = defaultCardColor;
+      break;
   }
   
   return (
-    <article 
-      className="benefit-card" 
-      style={{backgroundColor: bgCard}}
-    >
+    <StyledBenefitCard style={{backgroundColor: bgCard}}>
       <img 
         src={image.default}
         width={52} 
         height={52} 
         alt="benefit" 
       />
-      <div 
-        className="benefit-card__header"
-      >
-        <Category 
-          category={category} 
-        />
-        <Title3>
-          {title}
-        </Title3>
-      </div>
-      <p
-        className="benefit-card__text" 
-      >
-        {text}
-      </p>
-    </article>
+      <CardHeader>
+        <Category category={category} />
+        <Title3>{title}</Title3>
+      </CardHeader>
+      <CardText>{text}</CardText>
+    </StyledBenefitCard>
   );
 }
