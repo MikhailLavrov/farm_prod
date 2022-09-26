@@ -5,19 +5,19 @@ import { Button as btn } from '../../elements/index';
 const StyledButton = styled(btn) `
   padding: 16.5px;
   
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  line-height: 27px;
+  font-family: ${(props) => props.theme.fontFamily};
+  font-size: ${(props) => props.theme.fontSizeDefault};
+  line-height: ${(props) => props.theme.lineHeightDefault};
   font-weight: 700;
-  color: #ffffff;
+  color: ${(props) => props.theme.textColorLight};
 
-  background-color: #FC9B27;
+  background-color: ${(props) => props.theme.buttonColor};
 
   &:hover {
-    background-color: #fa8a00;
+    background-color: ${(props) => props.theme.buttonHoverColor};
   }
   &:active {
-    background-color: #c66d01;
+    background-color: ${(props) => props.theme.buttonActiveColor};
   }
 `;
 

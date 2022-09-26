@@ -5,7 +5,7 @@ import Footer from "../footer/footer";
 import styled from "styled-components";
 
 const StyledPageWrapper = styled.div `
-  max-width: 1280px;
+  max-width: ${(props) => props.theme.pageWidth};
   margin: 0 auto;
 `;
 

@@ -16,7 +16,7 @@ export const StyledAbout = styled.section `
   width: 100vw;
   height: 100%;
   content: '';
-  background-color: #D8ECFE;
+  background-color: ${(props) => props.theme.colorBlue};
   top: 0;
   left: 50%;
   transform: translateX(-50%);

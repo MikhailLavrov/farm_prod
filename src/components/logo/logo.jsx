@@ -15,7 +15,7 @@ const LogoText = styled.span `
   font-size: 28px;
   line-height: 32px;
   font-weight: 700;
-  color: #333333;
+  color: ${(props) => props.theme.textColorDark};
 `;
 
 export default function Logo() {

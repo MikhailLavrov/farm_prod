@@ -6,7 +6,7 @@ const CategoryName = styled.span `
   
   font-size: 14px;
   line-height: 21px;
-  color: #ffffff;
+  color: ${(props) => props.theme.textColorLight};
 `;
 
 export const CategoryType = {

@@ -3,7 +3,7 @@ import Logo from "../logo/logo";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer `
-  min-height: 80px;
+  min-height: ${(props) => props.theme.HeaderFooterHeight};
   padding: 18px 90px;
 
   display: flex;
