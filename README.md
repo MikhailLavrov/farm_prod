@@ -1,5 +1,5 @@
 # Farm products app
-## _my first training project with ReactJs_
+## _farm grocery store with delivery_
 
 Getting Started with:
 
