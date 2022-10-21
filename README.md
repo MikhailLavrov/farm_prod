@@ -4,6 +4,8 @@
 - react
 - styled components
 
+---
+
 Getting Started with:
 
 ```sh
