@@ -1,8 +1,8 @@
 # Farm products app
 ## _farm grocery store with delivery_
 
-- react
-- styled components
+- [x] react
+- [x] styled components
 
 ---
 
