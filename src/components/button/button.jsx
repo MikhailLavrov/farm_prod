@@ -23,6 +23,6 @@ const StyledButton = styled(btn) `
 
 export default function Button({ children, minWidth }) {
   return (
-    <StyledButton type="button" style={{ minWidth: minWidth }}>{children}</StyledButton>
+    <StyledButton type="button" style={{ minWidth: minWidth }} onClick={() => console.log('Купить')}>{children}</StyledButton>
   );
 }
